@@ -141,6 +141,22 @@ lcsebody.lst    ← 文件索引
 
 补丁内含 `文件校验.txt`（MD5 / SHA-256），可用于确认下载完整、覆盖成功。
 
+### 运行环境（Windows 10 / 11）
+
+本作为 2005 年的老游戏，在 Windows 10 / 11 上首次运行，通常需先安装以下微软官方运行库（均免费）：
+
+| 运行库 | 用途 | 官方下载 |
+| --- | --- | --- |
+| Microsoft Visual C++ 2005 SP1 可再发行组件包（**x86**） | 提供 MSVCR80 / MFC 等旧运行时，缺它会无法启动 | https://www.microsoft.com/zh-cn/download/details.aspx?id=26347 |
+| Microsoft Visual C++ 2008 SP1 可再发行组件包（**x86**） | 部分 2008 工具链生成的组件 | https://www.microsoft.com/zh-cn/download/details.aspx?id=26368 |
+| DirectX End-User Runtime（June 2010） | 提供 d3dx9 等旧版 DirectX 组件，缺它会报缺 d3d 相关 dll | https://www.microsoft.com/zh-cn/download/details.aspx?id=8109 |
+
+注意：
+
+- 以上链接均为微软官方下载中心（microsoft.com），请下载 **x86（32 位）** 版本——老游戏多为 32 位进程。
+- Windows 11 已内置 .NET Framework 3.5；若个别环境需要，可在「设置 → 应用 → 可选功能 → 更多 Windows 功能」中勾选「.NET Framework 3.5（包括 .NET 2.0 和 3.0）」启用。
+- 装好运行库后若仍启动异常，请对 `lcsebody.exe` 右键「属性 → 兼容性」，勾选「以管理员身份运行」，并尝试设置为 **Windows XP (Service Pack 3)** 或 **Windows 7** 兼容模式。
+
 ---
 
 ## 许可证
