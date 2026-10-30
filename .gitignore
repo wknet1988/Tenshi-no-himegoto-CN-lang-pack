@@ -1,0 +1,44 @@
+# ===== 用户自备 / 构建产物（不纳入版本库） =====
+# 原版游戏数据（用户自备）
+tenshi/
+
+# 构建过程生成
+.work/extract/
+.work/zh/
+.work/build/
+.work/draft/
+.work/inbox/
+.work/sheets/
+.work/shots/
+.work/play/
+.work/probe/
+.work/clean/
+.work/mingw/
+.work/patched_exe/
+.work/cptest*/
+.work/t_orig/
+.work/t_reenc/
+.work/vanilla/
+.work/testrun/
+.work/origrun/
+.work/roundtrip/
+.work/origbuild/
+.work/bs_*/
+.work/_旧版*/
+.work/cn_backup_*/
+
+# 已汉化的游戏数据（由构建生成；含原版派生内容，不下发）
+cn/
+
+# 打包产物（含修改后的游戏数据包，体积大且为构建产物）
+汉化补丁/
+天使のひめごと-汉化版/
+*.zip
+
+# 工具链中间缓存
+tools/mt_cache.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
